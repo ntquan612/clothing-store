@@ -1,0 +1,22 @@
+.cart {
+    &-main {
+        @include flex(flex-start, space-between, wrap);
+    }
+    &__left {
+        // background-color: $text-primary;
+        width: 70%;
+    }
+    &__right {
+        // background-color: $text-primary;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cart__left {
+        width: 100%;
+    }
+    .cart__right {
+        width: 100%;
+    }
+}

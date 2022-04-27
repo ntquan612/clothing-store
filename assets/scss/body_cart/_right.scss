@@ -1,0 +1,52 @@
+.cart__right {
+    &-above {
+        padding: 2rem;
+        background-color: $text-primary;
+        border-radius: 2rem;
+        // position: absolute;
+        // top: 17.5rem;
+        // width: 35rem;
+        margin-bottom: 2rem;
+    }
+    &-under {
+        padding: 2rem;
+        background-color: $text-primary;
+        border-radius: 2rem;
+        // position: absolute;
+        // top: 35rem;
+        // width: 35rem;
+        margin-bottom: 2rem;
+    }
+    &-box {
+        @include flex(center, space-between, wrap);
+        padding-bottom: 2rem;
+    }
+    &-title {
+        font-size: 2rem;
+    }
+    & span {
+        font-size: 1.5rem;
+    }
+    &-link {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: $main-color;
+        &:hover {
+            color: $extra-color;
+        }
+    }
+}
+.extra-color {
+    color: $extra-color;
+    font-size: 5rem;
+}
+.main-color {
+    color: $main-color;
+}
+
+@media screen and (max-width: 1023px) {
+    .cart__right-above,
+    .cart__right-under {
+        width: 100%;
+    }
+}

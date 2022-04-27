@@ -1,0 +1,137 @@
+section {
+    padding: 2rem 10%;
+}
+article {
+    width: 25%;
+}
+aside {
+    width: 75%;
+}
+@media screen and (max-width: 990px) {
+    article {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $main-color;
+    }
+    & span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        padding: 1rem;
+        font-weight: 600;
+        border-radius: 5rem;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        text-transform: capitalize;
+        color: $main-color;
+        font-size: 3rem;
+        background-color: $body-color;
+        font-family: "#9Slide07 Brankovic";
+    }
+}
+.product-name {
+    font-size: 2rem;
+    color: $main-color;
+    text-align: center;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    font-family: "#9Slide04 AdrianeSwash";
+    &:hover {
+        color: $extra-color;
+        text-decoration: underline;
+    }
+}
+
+.line {
+    text-align: center;
+    position: relative;
+    margin-bottom: 10rem;
+    &:before {
+        content: "";
+        width: 40%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: $main-color;
+    }
+    & span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        padding: 1rem;
+        font-weight: 600;
+        border-radius: 5rem;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        text-transform: capitalize;
+        font-family: "#9Slide04 NarzissDrops";
+        & a {
+            color: $text-primary;
+        }
+        &:hover a {
+            color: $body-color;
+        }
+    }
+}
+.text-one {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb50 {
+    margin-bottom: 50px;
+}
+.mb100 {
+    margin-bottom: 100px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 5rem;
+}

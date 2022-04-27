@@ -1,0 +1,59 @@
+.service {
+    --spacing: 2.5rem;
+    --columns: 4;
+    @include flex(center, start, wrap);
+    margin-left: calc(-1 * var(--spacing));
+
+    &__box {
+        width: calc(calc(100% / var(--columns)) - var(--spacing));
+        margin-left: var(--spacing);
+        margin-bottom: var(--spacing);
+        display: flex;
+        flex-direction: column;
+        transition: 0.25s all;
+        position: relative;
+        &-inner {
+            max-width: 30rem;
+            height: 100%;
+            position: relative;
+            &:hover .service__box-content {
+                bottom: 0;
+                transform: scale(1.02);
+                border-radius: 0 0 0.5rem 0.5rem;
+                opacity: 1;
+            }
+        }
+        &-image {
+            width: 30rem;
+            height: 30rem;
+            object-fit: cover;
+            border-radius: 1rem;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        &-title {
+            position: absolute;
+            color: $textx-dark;
+            bottom: 1rem;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            left: 50%;
+            width: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+    .service {
+        --columns: 2;
+    }
+}
+
+// @media screen and (max-width: 767px) {
+//     .service {
+//         --spacing: 1.5rem;
+//         --columns: 2;
+//     }
+// }

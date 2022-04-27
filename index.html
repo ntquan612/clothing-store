@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- css custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+<!-- sass ./app.scss ../css/style.css --watch -->
+
+<body>
+    <nav class="menu">
+        <a href="index.html" class="menu__logo">Wibu Lord</a>
+        <div class="menu__main">
+            <ul class="menu__main-list">
+                <li class="menu__main-item">
+                    <a href="index.html" class="menu__main-link">trang chủ</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./introduce.html" class="menu__main-link">giới thiệu</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./shop.html" class="menu__main-link">cửa hàng</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./contact.html" class="menu__main-link">liên hệ</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./cart.html" class="menu__main-link">giỏ hàng</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./login.html" class="menu__main-link">đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </nav>
+
+
+    <header class="header" id="header">
+        <video autoplay loop muted class="header-video slide-video active">
+            <source src="./assets/video/header-1.mp4">
+        </video>
+        <video autoplay loop muted class="header-video slide-video">
+            <source src="./assets/video/header-2.mp4">
+        </video>
+        <video autoplay loop muted class="header-video slide-video">
+            <source src="./assets/video/header-3.mp4">
+        </video>
+
+        <div class="header__content">
+            <!-- 1 -->
+            <h1 class="header__content-title active">
+                <strong>Bạn có biết</strong><br>
+                <span>Cosplay là gì ?</span>
+            </h1>
+            <p class="header__content-info active">
+                Cosplay là một từ tiếng Anh do người Nhật sáng tạo ra, là sự kết hợp của "costume"
+                (trang phục)và "role play" (hóa thân), được phát âm là kosupure (コスプレ) ở Nhật. Từ
+                này chỉ việc người hâm mộ các nhân vật trong manga, anime, tokusatsu, truyện tranh
+                sách, tiểu thuyết đồ họa, video games, phim giả tưởng, ca sĩ, quân nhân, nhân vật
+                chính trị,... ăn mặc hoặc có điệu bộ giống nhân vật mà mình yêu thích. Những người
+                này được gọi là "cosplayer" (ở Nhật đôi khi gọi tắt là reya レイヤー).
+            </p>
+            <a href="#" class="btn header__content-link active">
+                Xem nhiều hơn
+            </a>
+            <!-- 2 -->
+            <h1 class="header__content-title">
+                <strong>Giới thiệu</strong><br>
+                <span>Đôi nét về shop WibuLord</span>
+            </h1>
+            <p class="header__content-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, ea ullam atque
+                quasi aspernatur est, unde ad id voluptates debitis corporis nisi provident
+                recusandae pariatur rem, sunt maiores assumenda?
+            </p>
+            <a href="#" class="btn header__content-link">
+                Xem nhiều hơn
+            </a>
+            <!-- 3 -->
+            <h1 class="header__content-title">
+                <strong>Tại sao</strong><br>
+                <span>Nên chọn mua đồ tại WibuLord</span>
+            </h1>
+            <p class="header__content-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur accusantium, in quisquam amet tempore aut harum reiciendis, quam iure et
+                sapiente possimus voluptate nihil eveniet id architecto similique debitis
+                distinctio!
+            </p>
+            <a href="#" class="btn header__content-link">
+                Xem nhiều hơn
+            </a>
+        </div>
+
+        <div id="slide-nav">
+            <input type="radio" id="one" class="radio-input slide-btn active" name="check"
+                checked />
+            <label for="one" class="radio-label"></label>
+            <input type="radio" id="two" class="radio-input slide-btn" name="check" />
+            <label for="two" class="radio-label"></label>
+            <input type="radio" id="three" class="radio-input slide-btn" name="check" />
+            <label for="three" class="radio-label"></label>
+        </div>
+    </header>
+
+
+    <section class="product-new">
+        <div class="heading mb50"><span>sản phẩm vừa cập nhật</span></div>
+        <div class="product">
+            <div class="product__wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper" id="newProduct">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./assets/img/a/8.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="line mt50"><span class="btn"><a href="#">xem tất cả</a></span></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product-hot" id="product-hot">
+
+        <h1 class="heading"><span>Sản phẩm bán chạy nhất</span></h1>
+
+        <div class="hot" id="hotProduct">
+
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/1a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/1b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/2a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/2b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/3a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/3b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/4a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/4b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/5a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/5b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/6a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/6b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/7a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/7b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/8a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/8b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/9a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/9b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+            <a href="./detail.html" class="hot__flip-card">
+                <div class="hot__flip-card-inner">
+                    <div class="hot-front">
+                        <img src="./assets/img/10a.jpg" alt="" class="hot-image" />
+                    </div>
+                    <div class="hot-back">
+                        <img src="./assets/img/10b.jpg" alt="" class="hot-image" />
+                    </div>
+                </div>
+                <span class="product-name" title="Lorem ipsum dolor sit amet consectetur">Lorem
+                    ipsum dolor sit amet
+                    consectetur</span>
+            </a>
+        </div>
+
+        <div class="line mt50">
+            <span class="btn">
+                <a href="./comingsoon.html">xem tất cả</a>
+            </span>
+        </div>
+
+    </section>
+
+
+    <section class="product-wishlist">
+        <div class="heading"><span>sản phẩm yêu thích nhất</span></div>
+        <div class="wishlists">
+            <div class="wishlist" id="wishlistProduct">
+
+                <a href="./detail.html" class="wishlist__card">
+                    <div class="wishlist__card-inner">
+                        <img src="./assets/img/b/1.jpg" alt="" class="wishlist__card-image">
+                        <div class="wishlist__card-name product-name">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./detail.html" class="wishlist__card">
+                    <div class="wishlist__card-inner">
+                        <img src="./assets/img/b/2.jpg" alt="" class="wishlist__card-image">
+                        <div class="wishlist__card-info">
+                            <div class="wishlist__card-name product-name">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail.html" class="wishlist__card">
+                    <div class="wishlist__card-inner">
+                        <img src="./assets/img/b/3.jpg" alt="" class="wishlist__card-image">
+                        <div class="wishlist__card-info">
+                            <div class="wishlist__card-name product-name">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail.html" class="wishlist__card">
+                    <div class="wishlist__card-inner">
+                        <img src="./assets/img/b/4.jpg" alt="" class="wishlist__card-image">
+                        <div class="wishlist__card-info">
+                            <div class="wishlist__card-name product-name">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./detail.html" class="wishlist__card">
+                    <div class="wishlist__card-inner">
+                        <img src="./assets/img/b/5.jpg" alt="" class="wishlist__card-image">
+                        <div class="wishlist__card-info">
+                            <div class="wishlist__card-name product-name">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="line mt50">
+            <span class="btn">
+                <a href="#">xem tất cả</a>
+            </span>
+        </div>
+
+    </section>
+
+
+    <section class="product-coomingsoon" id="product-coomingsoon">
+
+        <div class="heading"><span>sản phẩm sắp bán</span></div>
+
+        <div class="coomingsoon">
+            <div class="coomingsoon__image" id="coomingsoonProduct">
+                <a href="./detail.html" class="coomingsoon__image-item">
+                    <img src="./assets/img/c/1.jpg" alt="">
+                </a>
+                <a href="./detail.html" class="coomingsoon__image-item">
+                    <img src="./assets/img/c/2.jpg" alt="">
+                </a>
+                <a href="./detail.html" class="coomingsoon__image-item">
+                    <img src="./assets/img/c/3.jpg" alt="">
+                </a>
+                <a href="./detail.html" class="coomingsoon__image-item">
+                    <img src="./assets/img/c/4.jpg" alt="">
+                </a>
+                <a href="./detail.html" class="coomingsoon__image-item">
+                    <img src="./assets/img/c/5.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="line mt50">
+            <span class="btn">
+                <a href="./comingsoon.html">xem tất cả</a>
+            </span>
+        </div>
+
+    </section>
+
+
+    <footer class="footer" id="footer">
+
+        <div class="footer__list">
+            <div class="footer__list-item">
+                <h3 class="footer-title">CÔNG TY CỔ PHẦN ONOFF</h3>
+                <p class="mb20">
+                    ĐKKD: 0303930269, ngày cấp: 18/08/2005
+                </p>
+                <p class="mb20">
+                    Sở Kế hoạch và đầu tư TP. Hồ Chí Minh
+                </p>
+                <p class="mb20">
+                    Địa chỉ trụ sở chính: 366 Hai Bà Trưng, Phường Tân Định, Quận 1, TP Hồ Chí Minh
+                </p>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">thông tin hỗ trợ</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    hướng dẫn thanh toán
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn mua hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn chọn size
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn đổi trả
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn theo dõi đơn hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Câu hỏi thường gặp
+                </a>
+                <h3 class="footer-title mt50">chính sách</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách vận chuyển
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách đổi trả
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách bảo mật
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">thương hiệu</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-male"></i>
+                    giới thiệu
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-blog"></i>
+                    blog
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-clone"></i>
+                    hệ thống cửa hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-user-plus"></i>
+                    tuyển dụng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-file-signature"></i>
+                    liên hệ
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">tài khoản </h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    tra cứu đơn hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-history"></i>
+                    lịch sử mua hàng
+                </a>
+                <h3 class="footer-title mt50">ưu đãi</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-id-card"></i>
+                    thẻ quà tặng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-users"></i>
+                    khách hàng thân thiết
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">liên hệ</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(miễn phí)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(KD bán buôn MB)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(KD bán buôn MN)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-envelope"></i>
+                    <span class="none"> ntquan612 @gmail.com</span>
+                </a>
+
+                <h3 class="footer-title mt50">ĐĂNG KÝ NHẬN MAIL TỪ ONOFF</h3>
+                <div class="simple-search">
+                    <input type="email" placeholder="Nhập email của bạn tại đây" />
+                    <button>Gửi</button>
+                </div>
+
+                <div class="icon mt50">
+                    <ul class="social-share ">
+                        <li class="social-item social-item--facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li class="social-item social-item--twitter">
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="social-item social-item--telegram">
+                            <i class="fab fa-telegram"></i>
+                        </li>
+                        <li class="social-item social-item--linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/menu.js"></script>
+
+<script src="./assets/js/home-header.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/lib/swiper-home.js"></script>
+<!-- Swiper JS -->
+
+<!-- <script src="./assets/api/api-home.js"></script> -->

@@ -1,0 +1,47 @@
+.introduce-benefit .benefit {
+    &-bg {
+        height: 100vh;
+        background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+            url(../img/introduce-clipart.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        clip-path: polygon(100% 80%, 50% 100%, 0 80%, 0 1%, 50% 15%, 100% 0);
+        position: relative;
+    }
+    &__box {
+        &-info {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        &-item {
+            list-style: none;
+            color: $main-color;
+            font-size: 3rem;
+            margin-top: 3rem;
+
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+
+            & span {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .benefit__box-item {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .benefit__box-item {
+        width: 300px;
+    }
+    .benefit__box-item span {
+        font-size: 1.9rem;
+    }
+}

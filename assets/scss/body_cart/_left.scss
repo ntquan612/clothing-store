@@ -1,0 +1,83 @@
+.cart__left {
+    &-box {
+        width: 90%;
+        height: auto;
+        border-radius: 2rem;
+        background-color: #fff;
+        padding: 2rem;
+    }
+    &-card {
+        @include flex(center, space-between, wrap);
+    }
+    &-total {
+        margin-top: 10rem;
+        font-size: 2rem;
+    }
+    &-top {
+        @include flex(center, space-between, wrap);
+    }
+    &-name {
+        font-size: 2rem;
+        text-transform: capitalize;
+        padding-bottom: 2rem;
+    }
+    &-inner {
+        display: flex;
+    }
+    &-image {
+        width: 10rem;
+        height: 15rem;
+        margin-right: 2rem;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-attribute {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        & span {
+            display: inline-block;
+            width: 10rem;
+        }
+    }
+}
+
+.quantity-input {
+    display: inline-flex;
+    border-radius: 16px;
+    border: 1px solid #a7a8b0;
+    color: #a7a8b0;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+.quantity-input > * {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quantity-input .add,
+.quantity-input .minus {
+    cursor: pointer;
+}
+.quantity-input .number {
+    width: 50px;
+    background-color: #f9faff;
+    line-height: normal;
+    border: 0;
+    outline: none;
+    font-size: inherit;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .cart__left-box {
+        width: 100%;
+    }
+}

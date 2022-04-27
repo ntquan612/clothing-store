@@ -1,0 +1,38 @@
+.login {
+    position: absolute;
+    animation: xoayvong 10s linear 0s infinite;
+    -webkit-animation: xoayvong 10s linear 0s infinite;
+    -moz-animation: xoayvong 10s linear 0s infinite;
+    -o-animation: xoayvong 10s linear 0s infinite;
+    &-1 {
+        top: 0;
+    }
+    &-2 {
+        top: 0;
+        right: 23%;
+        z-index: -1;
+    }
+    &-form {
+        padding: 0 4rem;
+    }
+}
+.login-3 {
+    animation: xoaynguoc 10s linear 0s infinite;
+    -webkit-animation: xoaynguoc 10s linear 0s infinite;
+    -moz-animation: xoaynguoc 10s linear 0s infinite;
+    -o-animation: xoaynguoc 10s linear 0s infinite;
+    top: 50%;
+    right: 0;
+}
+.img-bottom {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .login-2 {
+        display: none;
+    }
+}

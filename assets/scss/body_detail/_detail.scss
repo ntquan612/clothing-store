@@ -1,0 +1,76 @@
+.detail {
+    margin-top: 10rem;
+    &-title {
+        font-size: 3rem;
+        color: $text-primary;
+        text-align: center;
+        font-family: "#9Slide03 Arima Madurai";
+    }
+    &__box {
+        @include flex(start, space-between, wrap);
+        &-image {
+            margin-right: 10rem;
+        }
+        &-info {
+            max-width: 70rem;
+        }
+    }
+    &-text {
+        color: $text-primary;
+        font-size: 2rem;
+        line-height: 5rem;
+        text-transform: capitalize;
+    }
+    &-id {
+        background-color: $main-color;
+        padding: 0.5rem 1.5rem;
+        border-radius: 10rem;
+    }
+    &-consists {
+        color: $main-color;
+    }
+    &-price {
+        &-buy {
+            color: $main-color;
+        }
+        &-rent {
+            color: $extra-color;
+        }
+    }
+    &-content {
+        line-height: 3rem;
+        text-transform: none;
+    }
+    &-promotion {
+        text-transform: capitalize;
+        color: $main-color;
+    }
+    & i {
+        color: $extra-color;
+    }
+}
+.detail__box-image {
+    & .swiper {
+        width: 30rem;
+        height: 50rem;
+    }
+    & .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        background-color: $main-color;
+        position: relative;
+        &::after {
+            content: "no image";
+            position: absolute;
+            z-index: -1;
+        }
+        & img {
+            height: 100%;
+        }
+    }
+}

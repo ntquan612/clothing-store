@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+
+    <!-- css custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a href="index.html" class="menu__logo">Wibu Lord</a>
+        <div class="menu__main">
+            <ul class="menu__main-list">
+                <li class="menu__main-item">
+                    <a href="index.html" class="menu__main-link">trang chủ</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./introduce.html" class="menu__main-link">giới thiệu</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./shop.html" class="menu__main-link">cửa hàng</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./contact.html" class="menu__main-link">liên hệ</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./cart.html" class="menu__main-link">giỏ hàng</a>
+                </li>
+                <li class="menu__main-item">
+                    <a href="./login.html" class="menu__main-link">đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </nav>
+
+
+    <section class="cart mt100" id="cart">
+        <div class="heading"><span>giỏ hàng của bạn</span></div>
+        <div class="cart-main">
+            <div class="cart__left mt50">
+                <!-- 1 -->
+                <div class="cart__left-box mb50">
+                    <div class="cart__left-top">
+                        <h3 class="cart__left-name">ten sản phẩm</h3>
+                        <button style="background: none;"><i class="fas fa-times"></i></button>
+                    </div>
+                    <!-- left -->
+                    <div class="cart__left-card">
+                        <div class="cart__left-inner">
+                            <div class="cart__left-image">
+                                <img src="./assets/img/about-us.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="cart__left-attribute"><span>Chất liệu</span>: vãi kaki</p>
+                                <p class="cart__left-attribute"><span>Màu</span>: xanh dương</p>
+                                <p class="cart__left-attribute"><span>Size</span>: L</p>
+                                <p class="cart__left-attribute"><span>Đơn giá</span>: 200.000 VNĐ
+                                </p>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div class="cart__left-monney">
+                            <div class="quantity-input">
+                                <div class="add">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <input type="number" class="number" value="9" />
+                                <div class="minus">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="cart__left-total">Tổng: 200.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <!-- 2 -->
+                <div class="cart__left-box mb50">
+                    <div class="cart__left-top">
+                        <h3 class="cart__left-name">ten sản phẩm</h3>
+                        <button style="background: none;"><i class="fas fa-times"></i></button>
+                    </div>
+                    <!-- left -->
+                    <div class="cart__left-card">
+                        <div class="cart__left-inner">
+                            <div class="cart__left-image">
+                                <img src="./assets/img/about-us.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="cart__left-attribute"><span>Chất liệu</span>: vãi kaki</p>
+                                <p class="cart__left-attribute"><span>Màu</span>: xanh dương</p>
+                                <p class="cart__left-attribute"><span>Size</span>: L</p>
+                                <p class="cart__left-attribute"><span>Đơn giá</span>: 200.000 VNĐ
+                                </p>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div class="cart__left-monney">
+                            <div class="quantity-input">
+                                <div class="add">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <input type="number" class="number" value="9" />
+                                <div class="minus">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="cart__left-total">Tổng: 200.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <!-- 3 -->
+                <div class="cart__left-box mb50">
+                    <div class="cart__left-top">
+                        <h3 class="cart__left-name">ten sản phẩm</h3>
+                        <button style="background: none;"><i class="fas fa-times"></i></button>
+                    </div>
+                    <!-- left -->
+                    <div class="cart__left-card">
+                        <div class="cart__left-inner">
+                            <div class="cart__left-image">
+                                <img src="./assets/img/about-us.jpg" alt="">
+                            </div>
+                            <div>
+                                <p class="cart__left-attribute"><span>Chất liệu</span>: vãi kaki</p>
+                                <p class="cart__left-attribute"><span>Màu</span>: xanh dương</p>
+                                <p class="cart__left-attribute"><span>Size</span>: L</p>
+                                <p class="cart__left-attribute"><span>Đơn giá</span>: 200.000 VNĐ
+                                </p>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div class="cart__left-monney">
+                            <div class="quantity-input">
+                                <div class="add">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <input type="number" class="number" value="9" />
+                                <div class="minus">
+                                    <i class="fa fa-minus"></i>
+                                </div>
+                            </div>
+                            <p class="cart__left-total">Tổng: 200.000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+            </div>
+            <div class="cart__right">
+                <div class="cart__right-above mt50">
+                    <div class="cart__right-box">
+                        <h3 class="cart__right-title">Mã khuyến mãi</h3>
+                        <span>Có thể chọn 2 <i class="fas fa-exclamation-circle"></i></span>
+                    </div>
+                    <a href="#" class="cart__right-link">Chọn hoặc nhập mã khuyến mãi</a>
+                </div>
+                <div class="cart__right-under">
+                    <div class="cart__right-box" style="border-bottom:2px solid black ; ">
+                        <h3 class="cart__right-title">Tạm tính</h3>
+                        <span class="extra-color">200.000 VNĐ</span>
+                    </div>
+                    <div class="cart__right-box" style="padding-top: 1rem;">
+                        <h3 class="cart__right-title">Thành tiền</h3>
+                        <span class="main-color" style="font-size: 2rem;">200.000 VNĐ</span>
+                    </div>
+                    <button class="btn">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class=" footer" id="footer">
+
+        <div class="footer__list">
+            <div class="footer__list-item">
+                <h3 class="footer-title">CÔNG TY CỔ PHẦN ONOFF</h3>
+                <p class="mb20">
+                    ĐKKD: 0303930269, ngày cấp: 18/08/2005
+                </p>
+                <p class="mb20">
+                    Sở Kế hoạch và đầu tư TP. Hồ Chí Minh
+                </p>
+                <p class="mb20">
+                    Địa chỉ trụ sở chính: 366 Hai Bà Trưng, Phường Tân Định, Quận 1, TP Hồ Chí Minh
+                </p>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">thông tin hỗ trợ</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    hướng dẫn thanh toán
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn mua hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn chọn size
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn đổi trả
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Hướng dẫn theo dõi đơn hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-chevron-right"></i>
+                    Câu hỏi thường gặp
+                </a>
+                <h3 class="footer-title mt50">chính sách</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách vận chuyển
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách đổi trả
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-bookmark"></i>
+                    Chính sách bảo mật
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">thương hiệu</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-male"></i>
+                    giới thiệu
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-blog"></i>
+                    blog
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-clone"></i>
+                    hệ thống cửa hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-user-plus"></i>
+                    tuyển dụng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-file-signature"></i>
+                    liên hệ
+                </a>
+                <h3 class="footer-title mt50">ưu đãi</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-id-card"></i>
+                    thẻ quà tặng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-users"></i>
+                    khách hàng thân thiết
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">tài khoản </h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    tra cứu đơn hàng
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-history"></i>
+                    lịch sử mua hàng
+                </a>
+            </div>
+            <div class="footer__list-item">
+                <h3 class="footer-title">liên hệ</h3>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(miễn phí)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(KD bán buôn MB)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-phone-alt"></i>
+                    09012345678 <span>(KD bán buôn MN)</span>
+                </a>
+                <a class="footer__list-link" href="#">
+                    <i class="fas fa-envelope"></i>
+                    <span class="none"> ntquan612@gmail.com</span>
+                </a>
+
+                <h3 class="footer-title mt50">ĐĂNG KÝ NHẬN MAIL TỪ ONOFF</h3>
+                <div class="simple-search">
+                    <input type="email" placeholder="Nhập email của bạn tại đây" />
+                    <button>Gửi</button>
+                </div>
+
+                <div class="icon mt50">
+                    <ul class="social-share ">
+                        <li class="social-item social-item--facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li class="social-item social-item--twitter">
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li class="social-item social-item--telegram">
+                            <i class="fab fa-telegram"></i>
+                        </li>
+                        <li class="social-item social-item--linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/showOnScroll.js"></script>

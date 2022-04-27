@@ -1,0 +1,24 @@
+.pagination {
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 47rem;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    &__box {
+        width: 5rem;
+        height: 5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: $textx-dark;
+        background-color: $main-color;
+        margin: 0 0.5rem;
+    }
+}

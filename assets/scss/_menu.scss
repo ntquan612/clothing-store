@@ -1,0 +1,96 @@
+.menu {
+    @include flex(center, space-between, wrap);
+    padding: 0 10rem;
+    position: fixed;
+    line-height: 8.5rem;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(248, 247, 247, 0.9);
+    box-shadow: rgba(248, 247, 247, 0.9) 0 0.1rem 1rem 0.1rem;
+    background-color: #222;
+    &__logo {
+        font-size: 4rem;
+        color: $main-color;
+        font-family: "#9Slide07 Brankovic";
+    }
+    &__main {
+        &-list {
+            @include flex(center, center, wrap);
+        }
+        &-item {
+            list-style: none;
+        }
+        &-link {
+            margin-left: 2rem;
+            font-size: 2rem;
+            text-transform: capitalize;
+            color: $main-color;
+            font-family: "#9Slide03 Arima Madurai";
+            &:hover {
+                color: $extra-color;
+            }
+        }
+    }
+}
+
+.line-effect {
+    width: 0;
+    height: 2px;
+    background-color: $extra-color;
+    position: fixed;
+    pointer-events: none;
+    transition: all 0.25s linear;
+    z-index: 999;
+}
+
+#menu-btn {
+    font-size: 3rem;
+    cursor: pointer;
+    color: $main-color;
+    display: none;
+}
+@media (max-width: 820px) {
+    .menu__logo {
+        margin: 0;
+    }
+    #menu-btn {
+        display: initial;
+        transition: 0.2s linear;
+        &.fa-times {
+            transform: rotate(180deg);
+        }
+    }
+    .menu__main {
+        &-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: linear-gradient($main-color, $extra-color);
+            border-radius: 0.5rem;
+            transition: 0.3s linear;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            &.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+        &-item {
+            width: 100%;
+            padding: 1rem 2.5rem;
+        }
+        &-link {
+            font-size: 2rem;
+            display: block;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            margin-left: 0;
+            color: $text-primary;
+            border: $main-color;
+            text-align: center;
+        }
+    }
+}

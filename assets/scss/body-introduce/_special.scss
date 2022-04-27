@@ -1,0 +1,40 @@
+.introduce-special .special {
+    &__box {
+        @include flex(center, center, wrap);
+        &-image {
+            @include size(40rem);
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: rgba(255, 255, 255, 0.9) 0px 4px 12px;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            font-size: 3rem;
+            margin-top: 2rem;
+            color: $text-primary;
+            @include flex(center, center, wrap);
+        }
+        &-list {
+            margin-left: 15rem;
+        }
+        &-item {
+            list-style-type: "卍";
+            color: #fff;
+            width: 20rem;
+            & a {
+                color: $main-color;
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .special__box-list {
+        margin-right: 15rem;
+    }
+}

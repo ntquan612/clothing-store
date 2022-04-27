@@ -1,0 +1,47 @@
+.btn {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: $btn-text-1;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: $btn-bg;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    font-size: 2rem;
+}
+
+.btn::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: $main-color;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: $btn-text-2;
+}
+
+.btn:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+.btn-hotline {
+    font-family: "Celestia";
+    background-color: $btn-bg-red;
+    margin: 0 auto;
+    display: block;
+}
+.btn-size-sm {
+    font-size: 2rem;
+}

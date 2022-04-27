@@ -1,0 +1,30 @@
+.introduce-call .call {
+    height: 50rem;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+        url(../img/introduce-clipart.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    clip-path: polygon(100% 80%, 50% 100%, 0 80%, 0 1%, 50% 15%, 100% 0);
+    position: relative;
+    &-info {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &-title {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 3rem;
+        color: $main-color;
+        font-family: "#9Slide07 Brankovic";
+    }
+    &-content {
+        font-family: "#9Slide07 Brankovic";
+        margin-bottom: 2rem;
+        color: $main-color;
+        font-size: 3rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,9 @@
+.contact-address .address {
+    &-title {
+        font-size: 3rem;
+        color: $text-primary;
+        & span {
+            color: $main-color;
+        }
+    }
+}
